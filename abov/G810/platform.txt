@@ -1,0 +1,28 @@
+name=ABOV G810 Series
+
+compiler.path={runtime.platform.path}\abovflash.exe
+
+compiler.sdk.path={runtime.platform.path}/
+compiler.cpreprocessor.flags=
+
+compiler.abovisp.cmd=abovflash
+compiler.abovisp.cmd.windows=abovflash.exe
+
+recipe.cpp.o.pattern="{compiler.path}" -APPEASE_ARDUINO_IDE -APPEASE_STAGE_OUT {build.path}\preproc\ctags_target_for_gcc_minus_e.cpp {runtime.platform.path}
+recipe.c.combine.pattern="{compiler.path}" -APPEASE_ARDUINO_IDE -APPEASE_STAGE_COMBINE "{build.path}\abovflash\main.hex"
+
+recipe.size.pattern="{compiler.path}" -APPEASE_FILESIZE -APPEASE_STAGE_SIZE "{build.path}\abovflash\firmware_size.txt"
+recipe.size.regex=^(?:\.data|\.rodata|\.bss)\s+([0-9]+).*
+recipe.size.regex.data=^(?:\.data|\.rodata|\.bss)\s+([0-9]+).*
+
+
+tools.abovisp.cmd=abovflash
+tools.abovisp.cmd.windows=abovflash.exe
+tools.abovisp.path={compiler.path}
+
+tools.abovisp.upload.protocol=abovSerialProtocol
+tools.abovisp.upload.params.verbose= 
+tools.abovisp.upload.params.quiet= 
+tools.abovisp.upload.pattern="{runtime.platform.path}\abovflash.exe" -UPLOAD PORT_{serial.port} FREQ_{build.f_cpu_str} LVR_{build.lvr_str} LOCK_{build.lockbits_str} "{build.path}\abovflash\firmware_command.txt"
+upload.params.verbose= 
+upload.params.quiet= 

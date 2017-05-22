@@ -1,0 +1,35 @@
+menu.cpu=Processor
+menu.clock=Clock
+menu.lvr=Low Voltage Reset
+menu.lockbits=Flash Memory Lock
+
+abov.name=ABOV G810
+abov.bootloader.tool=abovisp
+abov.build.core=G810
+abov.build.board=mc81generic
+abov.upload.tool=abovisp
+
+abov.menu.cpu.mc81f4204=MC81F4204
+abov.menu.cpu.mc81f4204.upload.maximum_size=4096
+abov.menu.cpu.mc81f4204.build.mcu=mc81f4204
+
+abov.menu.clock.internal8=8 MHz (Internal)
+abov.menu.clock.internal8.build.f_cpu_str=8MHZ
+abov.menu.clock.internal8.build.f_cpu=8000000L
+
+
+abov.menu.lvr.lvr_disabled=LVR Disabled
+abov.menu.lvr.lvr_disabled.build.lvr_str=OFF
+abov.menu.lvr.lvr_2v4=LVR 2.4V
+abov.menu.lvr.lvr_2v4.build.lvr_str=2V4
+abov.menu.lvr.lvr_2v7=LVR 2.7V
+abov.menu.lvr.lvr_2v7.build.lvr_str=2V7
+abov.menu.lvr.lvr_3v0=LVR 3.0V
+abov.menu.lvr.lvr_3v0.build.lvr_str=3V0
+abov.menu.lvr.lvr_4v0=LVR 4.0V
+abov.menu.lvr.lvr_4v0.build.lvr_str=4V0
+
+abov.menu.lockbits.lockoff=Flash Lock Off
+abov.menu.lockbits.lockoff.build.lockbits_str=OFF
+abov.menu.lockbits.lockon=Flash Lock On
+abov.menu.lockbits.lockon.build.lockbits_str=ON

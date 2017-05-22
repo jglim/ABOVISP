@@ -1,0 +1,484 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:mt3608
+LIBS:ABOVISP-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MT3608 U1
+U 1 1 58CB500C
+P 2575 1675
+F 0 "U1" H 2575 1925 60  0000 C CNN
+F 1 "MT3608" H 2575 1425 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 2575 1675 60  0001 C CNN
+F 3 "" H 2575 1675 60  0001 C CNN
+	1    2575 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 58CB50CE
+P 975 2425
+F 0 "C1" H 1000 2525 50  0000 L CNN
+F 1 "22uF" H 1000 2325 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 1013 2275 50  0001 C CNN
+F 3 "" H 975 2425 50  0000 C CNN
+	1    975  2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 58CB5135
+P 1175 1225
+F 0 "L1" V 1125 1225 50  0000 C CNN
+F 1 "4.7uH" V 1275 1225 50  0000 C CNN
+F 2 "ABOVISP_Footprints:SMD_Inductor_CD54" H 1175 1225 50  0001 C CNN
+F 3 "" H 1175 1225 50  0000 C CNN
+	1    1175 1225
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Schottky D1
+U 1 1 58CB515A
+P 1375 2175
+F 0 "D1" H 1375 2275 50  0000 C CNN
+F 1 "SS34" H 1375 2075 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMC_Standard" H 1375 2175 50  0001 C CNN
+F 3 "" H 1375 2175 50  0000 C CNN
+	1    1375 2175
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 58CB518F
+P 1825 1775
+F 0 "R1" V 1905 1775 50  0000 C CNN
+F 1 "2.2K" V 1825 1775 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 1755 1775 50  0001 C CNN
+F 3 "" H 1825 1775 50  0000 C CNN
+	1    1825 1775
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 58CD39A9
+P 2075 1975
+F 0 "R2" V 2155 1975 50  0000 C CNN
+F 1 "33K" V 2075 1975 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 2005 1975 50  0001 C CNN
+F 3 "" H 2075 1975 50  0000 C CNN
+	1    2075 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 58CD3B26
+P 2075 2425
+F 0 "C2" H 2100 2525 50  0000 L CNN
+F 1 "22uF" H 2100 2325 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 2113 2275 50  0001 C CNN
+F 3 "" H 2075 2425 50  0000 C CNN
+	1    2075 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR1
+U 1 1 58CDEC18
+P 725 875
+F 0 "#PWR1" H 725 725 50  0001 C CNN
+F 1 "+5V" H 725 1015 50  0000 C CNN
+F 2 "" H 725 875 50  0000 C CNN
+F 3 "" H 725 875 50  0000 C CNN
+	1    725  875 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 58CDECCD
+P 725 2725
+F 0 "#PWR2" H 725 2475 50  0001 C CNN
+F 1 "GND" H 725 2575 50  0000 C CNN
+F 2 "" H 725 2725 50  0000 C CNN
+F 3 "" H 725 2725 50  0000 C CNN
+	1    725  2725
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2975 1575
+Text GLabel 2825 2175 2    60   Input ~ 0
+9V
+$Comp
+L C C3
+U 1 1 58CE0F9C
+P 2475 2425
+F 0 "C3" H 2500 2525 50  0000 L CNN
+F 1 "10uF" H 2500 2325 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 2513 2275 50  0001 C CNN
+F 3 "" H 2475 2425 50  0000 C CNN
+	1    2475 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L MMBT3904 Q1
+U 1 1 58CE1B1A
+P 5300 2050
+F 0 "Q1" H 5500 2125 50  0000 L CNN
+F 1 "MMBT3904" H 5500 2050 50  0000 L CNN
+F 2 "SOT-23" H 5500 1975 50  0000 L CIN
+F 3 "" H 5300 2050 50  0000 L CNN
+	1    5300 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 5400 1000 1    60   Input ~ 0
+9V
+Text GLabel 4600 1700 0    60   Input ~ 0
+PROG_VPP
+$Comp
+L GND #PWR8
+U 1 1 58CE1E24
+P 5400 2550
+F 0 "#PWR8" H 5400 2300 50  0001 C CNN
+F 1 "GND" H 5400 2400 50  0000 C CNN
+F 2 "" H 5400 2550 50  0000 C CNN
+F 3 "" H 5400 2550 50  0000 C CNN
+	1    5400 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 58CE1F87
+P 5400 1300
+F 0 "R4" V 5480 1300 50  0000 C CNN
+F 1 "10K" V 5400 1300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 5330 1300 50  0001 C CNN
+F 3 "" H 5400 1300 50  0000 C CNN
+	1    5400 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 58CE2112
+P 4900 2050
+F 0 "R3" V 4980 2050 50  0000 C CNN
+F 1 "1K" V 4900 2050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4830 2050 50  0001 C CNN
+F 3 "" H 4900 2050 50  0000 C CNN
+	1    4900 2050
+	0    1    1    0   
+$EndComp
+Text GLabel 4550 2050 0    60   Input ~ 0
+TRIG_VPP
+Text GLabel 3075 1775 2    60   Input ~ 0
+BOOST_EN
+$Comp
+L CONN_01X05 P1
+U 1 1 58CE2A7D
+P 2200 3675
+F 0 "P1" H 2200 3975 50  0000 C CNN
+F 1 "CONN_01X05" V 2300 3675 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x05_Pitch2.54mm" H 2200 3675 50  0001 C CNN
+F 3 "" H 2200 3675 50  0000 C CNN
+	1    2200 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 58CE2EA4
+P 1250 3625
+F 0 "#PWR3" H 1250 3375 50  0001 C CNN
+F 1 "GND" H 1250 3475 50  0000 C CNN
+F 2 "" H 1250 3625 50  0000 C CNN
+F 3 "" H 1250 3625 50  0000 C CNN
+	1    1250 3625
+	1    0    0    -1  
+$EndComp
+Text GLabel 1900 3675 0    60   Input ~ 0
+PROG_VPP
+Text GLabel 1900 3775 0    60   Input ~ 0
+PROG_SCK
+Text GLabel 1900 3875 0    60   Input ~ 0
+PROG_SDA
+$Comp
+L CONN_01X12 P2
+U 1 1 58CE39EB
+P 4825 4000
+F 0 "P2" H 4825 4650 50  0000 C CNN
+F 1 "CONN_01X12" V 4925 4000 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 4825 4000 50  0001 C CNN
+F 3 "" H 4825 4000 50  0000 C CNN
+	1    4825 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X12 P3
+U 1 1 58CE3A35
+P 5475 4000
+F 0 "P3" H 5475 4650 50  0000 C CNN
+F 1 "CONN_01X12" V 5575 4000 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x12_Pitch2.54mm" H 5475 4000 50  0001 C CNN
+F 3 "" H 5475 4000 50  0000 C CNN
+	1    5475 4000
+	-1   0    0    1   
+$EndComp
+NoConn ~ 5675 3450
+NoConn ~ 5675 3650
+NoConn ~ 5675 3850
+NoConn ~ 5675 3950
+NoConn ~ 5675 4050
+NoConn ~ 5675 4150
+NoConn ~ 5675 4250
+NoConn ~ 5675 4350
+NoConn ~ 5675 4550
+NoConn ~ 4625 3450
+NoConn ~ 4625 3550
+NoConn ~ 4625 3850
+NoConn ~ 4625 3950
+NoConn ~ 4625 4050
+$Comp
+L +5V #PWR7
+U 1 1 58CE3E0B
+P 6125 3700
+F 0 "#PWR7" H 6125 3550 50  0001 C CNN
+F 1 "+5V" H 6125 3840 50  0000 C CNN
+F 2 "" H 6125 3700 50  0000 C CNN
+F 3 "" H 6125 3700 50  0000 C CNN
+	1    6125 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 58CE419D
+P 5925 3550
+F 0 "#PWR6" H 5925 3300 50  0001 C CNN
+F 1 "GND" H 5925 3400 50  0000 C CNN
+F 2 "" H 5925 3550 50  0000 C CNN
+F 3 "" H 5925 3550 50  0000 C CNN
+	1    5925 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR5
+U 1 1 58CE4339
+P 4425 3800
+F 0 "#PWR5" H 4425 3550 50  0001 C CNN
+F 1 "GND" H 4425 3650 50  0000 C CNN
+F 2 "" H 4425 3800 50  0000 C CNN
+F 3 "" H 4425 3800 50  0000 C CNN
+	1    4425 3800
+	1    0    0    -1  
+$EndComp
+Text GLabel 4475 4550 0    60   Input ~ 0
+PROG_SDA
+Text GLabel 4475 4450 0    60   Input ~ 0
+PROG_SCK
+Text GLabel 4475 4250 0    60   Input ~ 0
+TRIG_VPP
+Text GLabel 4475 4150 0    60   Input ~ 0
+BOOST_EN
+Wire Wire Line
+	725  875  3225 875 
+Wire Wire Line
+	3225 875  3225 1675
+Wire Wire Line
+	3225 1675 2975 1675
+Wire Wire Line
+	975  2275 975  875 
+Connection ~ 975  875 
+Connection ~ 3225 1675
+Wire Wire Line
+	1175 925  1175 875 
+Connection ~ 1175 875 
+Wire Wire Line
+	1175 1575 2175 1575
+Wire Wire Line
+	1175 1525 1175 2175
+Wire Wire Line
+	1175 2175 1225 2175
+Connection ~ 1175 1575
+Wire Wire Line
+	1525 2175 2825 2175
+Wire Wire Line
+	725  2725 725  2675
+Wire Wire Line
+	725  2675 2475 2675
+Wire Wire Line
+	2075 2125 2075 2275
+Connection ~ 2075 2175
+Wire Wire Line
+	2075 2675 2075 2575
+Wire Wire Line
+	975  2575 975  2675
+Connection ~ 975  2675
+Wire Wire Line
+	1975 1775 2175 1775
+Wire Wire Line
+	2075 1775 2075 1825
+Connection ~ 2075 1775
+Wire Wire Line
+	1675 1775 1625 1775
+Wire Wire Line
+	1625 1675 1625 2675
+Wire Wire Line
+	1625 1675 2175 1675
+Connection ~ 1625 2675
+Connection ~ 1625 1775
+Wire Wire Line
+	2475 2675 2475 2575
+Connection ~ 2075 2675
+Wire Wire Line
+	2475 2275 2475 2175
+Connection ~ 2475 2175
+Wire Wire Line
+	5400 2250 5400 2550
+Wire Wire Line
+	5400 1000 5400 1150
+Wire Wire Line
+	5400 1450 5400 1850
+Wire Wire Line
+	4600 1700 5400 1700
+Connection ~ 5400 1700
+Wire Wire Line
+	5100 2050 5050 2050
+Wire Wire Line
+	4750 2050 4550 2050
+Wire Wire Line
+	3075 1775 2975 1775
+Wire Wire Line
+	2000 3675 1900 3675
+Wire Wire Line
+	2000 3775 1900 3775
+Wire Wire Line
+	2000 3875 1900 3875
+Wire Wire Line
+	5675 3750 6125 3750
+Wire Wire Line
+	6125 3750 6125 3700
+Wire Wire Line
+	5925 3550 5675 3550
+Wire Wire Line
+	4625 3750 4425 3750
+Wire Wire Line
+	4425 3650 4425 3800
+Wire Wire Line
+	4625 3650 4425 3650
+Connection ~ 4425 3750
+Wire Wire Line
+	1250 3575 1250 3625
+Wire Wire Line
+	2000 3575 1250 3575
+Text GLabel 1850 3475 0    60   Input ~ 0
+PROG_VCC
+Wire Wire Line
+	2000 3475 1850 3475
+Text GLabel 4475 4350 0    60   Input ~ 0
+PROG_VCC
+Wire Wire Line
+	4625 4550 4475 4550
+Wire Wire Line
+	4475 4450 4625 4450
+Wire Wire Line
+	4625 4350 4475 4350
+Wire Wire Line
+	4475 4250 4625 4250
+Wire Wire Line
+	4625 4150 4475 4150
+$Comp
+L CONN_01X03 P4
+U 1 1 58CE752F
+P 2200 4325
+F 0 "P4" H 2200 4525 50  0000 C CNN
+F 1 "CONN_01X03" V 2300 4325 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x03_Pitch2.54mm" H 2200 4325 50  0001 C CNN
+F 3 "" H 2200 4325 50  0000 C CNN
+	1    2200 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 58CE7678
+P 1250 4375
+F 0 "#PWR4" H 1250 4125 50  0001 C CNN
+F 1 "GND" H 1250 4225 50  0000 C CNN
+F 2 "" H 1250 4375 50  0000 C CNN
+F 3 "" H 1250 4375 50  0000 C CNN
+	1    1250 4375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 4325 2000 4325
+Text GLabel 1900 4225 0    60   Input ~ 0
+9V
+Wire Wire Line
+	1900 4225 2000 4225
+Wire Wire Line
+	1250 4325 1250 4375
+Text GLabel 1900 4425 0    60   Input ~ 0
+GPIO_16
+Wire Wire Line
+	2000 4425 1900 4425
+Text GLabel 5825 4450 2    60   Input ~ 0
+GPIO_16
+Wire Wire Line
+	5675 4450 5825 4450
+Wire Notes Line
+	475  4925 6475 4925
+Wire Notes Line
+	6475 4925 6475 475 
+Wire Notes Line
+	6475 475  475  475 
+Wire Notes Line
+	475  475  475  4925
+Wire Notes Line
+	3725 475  3725 4925
+Wire Notes Line
+	475  3000 6475 3000
+Text Notes 3000 2925 0    60   ~ 12
+MT3608 SMPS
+Text Notes 3650 4850 2    60   ~ 12
+PORTS: PROG INTERFACE, 9V BREAKOUT
+Text Notes 6400 4850 2    60   ~ 12
+PORTS: ARDUINO PRO MICRO INTERFACE
+Text Notes 6400 2925 2    60   ~ 12
+9V SWITCH
+Text Notes 7850 7500 2    71   ~ 14
+ABOVISP
+$EndSCHEMATC
